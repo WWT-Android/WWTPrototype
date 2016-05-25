@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FlyoutMenu"></style>
+        <color name="dark_blue">#00001b</color>
+        <color name="darker_blue">#000033</color>
+</resources>

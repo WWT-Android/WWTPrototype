@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<joli.wwtprototype.flyoutcontainer.view.viewgroup.FlyOutContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        android:orientation="vertical"
+        >
+    <!-- -android:alpha="0.3" -->
+
+
+        <Button android:id="@+id/collections"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="toggleMenu"
+            android:background="@color/darker_blue"
+            android:drawableLeft="@drawable/icons_collections"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Collections"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/black"
+            />
+
+        <Button android:id="@+id/tours"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="toggleMenu"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/darker_blue"
+            android:drawableLeft="@drawable/icons_tours"
+            android:text="Guided Tours"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:shadowColor="@android:color/black"
+            />
+
+        <Button android:id="@+id/search"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="toggleMenu"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/darker_blue"
+            android:drawableLeft="@drawable/icons_search"
+            android:text="Search"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+        <Button android:id="@+id/view"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="toggleMenu"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/darker_blue"
+            android:drawableLeft="@drawable/icons_view"
+            android:text="View"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+        <!-- Settings Button -->
+        <Button android:id="@+id/settings"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="toggleMenu"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/darker_blue"
+            android:drawableLeft="@drawable/icons_settings"
+            android:text="Settings"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:context=".MainActivity">
+
+        <WebView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/webView"
+            android:layout_gravity="center" />
+
+        <ImageButton android:id="@+id/menuButton"
+            android:src="@drawable/wwt_logo"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:onClick="toggleMenu"
+            android:scaleType="fitCenter"
+            android:background="#00ffffff"
+            android:clickable="false"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp" />
+
+    </RelativeLayout>
+
+
+</joli.wwtprototype.flyoutcontainer.view.viewgroup.FlyOutContainer>
+<!-- From: file:/C:/Users/Jasmine/WWTPrototype/app/src/main/res/layout/flyoutcontainer.xml -->

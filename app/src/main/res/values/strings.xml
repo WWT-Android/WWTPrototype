@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WWTPrototype</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sample_text">SampleText</string>
+
+</resources>
